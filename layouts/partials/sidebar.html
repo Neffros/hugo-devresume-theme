@@ -22,4 +22,8 @@
                             {{ partial "interests.html" . }}
                             {{ end }}
 
+                            {{ if .Site.Params.status.enable }}
+                            {{ partial "status.html" . }}
+                            {{ end }}
+
                         </aside><!--//resume-aside-->

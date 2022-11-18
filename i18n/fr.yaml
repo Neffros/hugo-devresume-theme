@@ -1,22 +1,22 @@
 - id: awards
   translation: Awards
 - id: education
-  translation: Education
+  translation: Scolarité
 - id: experiences
-  translation: Professional Experiences
+  translation: Expérience professionnelle
 - id: information
-  translation: Technical Skills
+  translation: Compétences Techniques
 - id: interests
-  translation: Interests
+  translation: Centres d'intérêt
 - id: status
   translation: Status
 - id: languages
-  translation: Languages
+  translation: Langues
 - id: projects
-  translation: Projects
+  translation: Projets
 - id: skills
-  translation: Traits
+  translation: Charactère
 - id: it-skills
   translation: Compétences informatiques
 - id: how
-  translation: Personality
+  translation: Personnalité

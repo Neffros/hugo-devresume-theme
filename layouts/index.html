@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="{{ .Site.LanguageCode }}">
+{{ partial "lang.html" . }}
 
 <head>
 
@@ -32,6 +32,10 @@
 
                         <div class="resume-main col-12 col-lg-8 col-xl-9 pr-0 pr-lg-5">
 
+                            {{ if .Site.Params.information.enable }}
+                            {{ partial "information.html" . }}
+                            {{ end }}
+
                             {{ if .Site.Params.experience.enable }}
                             {{ partial "experience.html" . }}
                             {{ end }}
@@ -40,9 +44,6 @@
                             {{ partial "projects.html" . }}
                             {{ end }}
 
-                            {{ if .Site.Params.information.enable }}
-                            {{ partial "information.html" . }}
-                            {{ end }}
 
                         </div><!--//resume-main-->
 
