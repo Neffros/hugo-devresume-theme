@@ -11,6 +11,7 @@
                                     </div>
                                     <div class="item-content">
                                         <strong>{{ with .details }}{{ . | markdownify }}{{ end }}</strong>
+                                        <p><i>{{ with .context }}{{ . | markdownify }}{{ end }}</i></p>
                                         <ul class="resume-list">
                                             {{ range .items }}
                                             <li>{{ with .details }}{{ . | markdownify }}{{ end }}</li>

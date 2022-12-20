@@ -8,12 +8,15 @@
                                     <!--<div class="item-heading row align-items-center mb-2">
                                         <h4 class="item-title col-12 col-md-12 col-lg-12 mb-2 mb-md-0">{{ .title }}</h4>
                                     </div>-->
-                                    <div class="item-content">
+                                    <div class="item-content"style="font-size: 16px" >
                                         <p>{{ with .details }}{{ . | markdownify }}{{ end }}</p>
                                         <ul class="list-unstyled resume-skills-list">
                                             {{ range .items }}
-                                            <li class="mb-2">{{ with .details }}{{ . | markdownify }}{{ end }}
-                                                <span style="color:white;">{{ with .hidden }}{{ . | markdownify }}{{ end }}</span>
+
+                                            <li class="mb-2">
+                                                <b style="color:#292929" style="font-size: 16px">{{ with .skillType }}{{ . | markdownify }}{{ end }}</b>
+                                                <span>{{ with .details }}{{ . | markdownify }}{{ end }}</span>
+                                                <!--<span style="color:white;">{{ with .hidden }}{{ . | markdownify }}{{ end }}</span>-->
                                             </li>
                                             {{ end }}
                                         </ul>
